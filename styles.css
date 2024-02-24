@@ -87,7 +87,7 @@ header{
     min-height: fit-content;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0, 0.2);
     border-radius: 3px;
-    z-index: 1;
+    z-index: 999;
     padding: 10px 20px;
 }
 
@@ -184,7 +184,8 @@ header{
  } */
 
 main{
-    padding: 50px 70px;
+    float: left;
+    flex: 3;
 }
 
 .container{
@@ -260,3 +261,130 @@ main{
 .icons i h5{
     font-weight: 500;
 }
+
+.main_container{
+    display: flex;
+    padding: 50px;
+}
+
+aside{
+    float: right;
+    flex: 1;
+    padding-left: 40px;
+}
+
+
+.search_field{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.search_field input{
+    padding: 11px 50px 11px 15px;
+    border: 1px solid lightgray;
+    outline: none;
+}
+
+.search_field a{
+    background-color: rgb(230, 67, 94);
+    padding: 10px 15px;
+    border-radius: 3px;
+}
+
+.search_field a i{
+    color: whitesmoke;
+    font-size: 15px;
+}
+
+.email_field{
+    background-color: rgba(217, 217, 217, 0.2);
+    margin-top: 30px;
+    text-align: center;
+    padding: 20px 10px;
+}
+
+.email_field h2{
+   color:  rgb(230, 67, 94);
+   font-weight: 400;
+   font-size: 20px;
+    
+}
+
+.email_field p{
+    padding-top: 10px;
+    color: rgb(22, 22, 22);
+    font-weight: 400;
+}
+
+.email_details{
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 5px;
+  
+  }
+  
+  .email_details input{
+    padding: 10px 0px 10px 10px;
+    outline: none;
+    border: 1px solid lightgray;
+  
+  }
+  .email_details a{
+    background: rgb(230, 67, 94);
+    padding: 11px;
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 12px;
+    font-weight: 400;
+    border-radius: 3px;
+    text-align: center;
+  }
+
+  .categories_container{
+    margin-top: 50px;
+    
+  }
+
+  #categories_drop{
+    padding: 10px ;
+    background-color: transparent;
+    width: 100%;
+    border: 1px solid lightgray;
+    outline: none;
+    text-align: start;
+    cursor: pointer;
+  
+  }
+
+  #categories_drop i{
+    color: darkgray;
+    float: right;
+    margin-top: 3px; 
+  }
+
+  #categories_content{
+  
+    /* display: none; */
+    padding: 10px 0 10px 0;
+    box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.2);
+    background-color: #fff;
+   
+  }
+
+  #categories_content h5{
+    padding: 5px 18px;
+    font-size: 14px;
+    font-weight: 400;
+  
+  
+  }
+
+  #categories_content h5:hover{
+    background-color: rgba(217, 217, 217, 0.4);
+    cursor: pointer;
+}
+
+
