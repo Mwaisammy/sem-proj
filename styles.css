@@ -367,10 +367,11 @@ aside{
 
   #categories_content{
   
-    /* display: none; */
+    display: none;
     padding: 10px 0 10px 0;
     box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.2);
     background-color: #fff;
+    width: 281px;
    
   }
 
@@ -388,3 +389,91 @@ aside{
 }
 
 
+/* Posts styles */
+
+
+
+.posts_container{
+    margin-top: 30px;
+   
+  }
+
+.posts_container h2{
+    margin: 20px 0;
+  
+    font-weight: 400;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: rgb(65, 65, 65);
+  }
+
+.posts{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 20px;
+    cursor: pointer;
+
+}
+
+.posts img{
+    width: 90px;
+    height: 75px;
+    object-fit: cover;
+    border-radius: 5px;
+
+}
+
+.posts p{
+    color: rgb(65,65,65);
+}
+
+.posts p:hover{
+    color: rgb(225, 71, 97);
+    transition: all .2s ease-in-out;
+}
+
+
+/* Params styles */
+
+.proms{
+    margin-top: 50px;
+    background-color: rgba(217, 217, 217, 0.3);
+    padding: 30px 20px;
+
+}
+.proms h3{
+    font-size: 17px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: rgb(67, 67, 67);
+
+}
+
+
+.proms p{
+    margin: 20px 0px;
+    color: rgb(71, 71, 71);
+    font-size: 14px;
+  
+  
+  }
+
+.proms button{
+    width: 100%;
+    padding: 10px 0px;
+    border: 1px solid rgb(225, 71, 97);
+    border-radius: 3px;
+    background: transparent;
+    font-size: 17px;
+    color: rgb(225, 71, 97);
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.proms button:hover{
+    background-color: rgb(225, 71, 97);
+    transition: all .2s ease-in-out;
+    color: whitesmoke;
+
+}
